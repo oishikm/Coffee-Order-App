@@ -1,0 +1,63 @@
+<CoffeeWidget>:
+    GridLayout:
+        size: root.width, root.height
+        cols: 2
+        Button:
+            id: bt1
+            text: "Black Coffee"
+            on_press: root.submit(bt1.text)        
+        Button:
+            id: bt2
+            text: "Black Coffee without Sugar"
+            on_press: root.submit(bt2.text)
+        Button:
+            id: bt3
+            text: "Milk Coffee"
+            on_press: root.submit(bt3.text)
+        Button:
+            id: bt4
+            text: "Milk Coffee without Sugar"
+            on_press: root.submit(bt4.text)
+        Button:
+            id: bt5
+            text: "Chilled Latte"
+            on_press: root.submit(bt5.text)
+        Button:
+            id: bt6
+            text: "Hot Latte"
+            on_press: root.submit(bt6.text)
+        Button:
+            id: bt7
+            text: "Chilled Mocha"
+            on_press: root.submit(bt7.text)
+        Button:
+            id: bt8
+            text: "Hot Mocha"
+            on_press: root.submit(bt8.text)
+        Button:
+            id: bt9
+            text: "Cappuccino"
+            on_press: root.submit(bt9.text)
+        Button:
+            id: bt10
+            text: "Espresso"
+            on_press: root.submit(bt10.text)
+        Label:
+        Label:
+        Button:
+            text: "Clear Order"
+            on_press: root.clearOrder()
+        Label: 
+            text: "<---   Press this button to clear your order and start over."
+        Label:
+        Label:
+        Label:
+        Label:
+            text: "Enjoy your coffee !"
+        Label:
+            text: "Press this button to finish and submit your order.   --->"
+        Button:
+            text: "Finish Order"
+            on_press: root.finishOrder()
+
+        
